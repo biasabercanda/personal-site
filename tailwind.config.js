@@ -4,6 +4,12 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily:{
+      sans:['Plus Jakarta Sans']
+    },
+    backgroundColor:{
+      'black':'#171717'
+    }
   },
   plugins: [],
 }

@@ -1,17 +1,43 @@
 ---
 layout: base.html
-title: Home
+title: Sofyan Hidayat Budiyono
 ---
-<div class="max-w-lg mx-auto mt-6 px-4 text-center">
-  <h1 class="font-semibold text-3xl">It’s (j)ust (e)leventy and (t)ailwind</h1>
-  <p>…OK, and a few other things; it's still *really* small though.</p>
+{% include "./_includes/header.html" %}
+<div class="mx-auto inset-x-0 w-3/5 mt-[100px] space-y-[80px]">
+  <p class="text-lg md:text-[30px] md:leading-[56px] ">Undergraduate student in Information Technology at Gadjah Mada University. Focusing my study to be a <span class="font-semibold"> digital product designer</span>  who can work with code.</p>
+
+  <a href="#work" class="flex gap-2 ">View my work
+    <img src="/img/arrow-down.svg" class="w-[20px]" alt="">
+  </a>
+
+  <div id="work" class="grid lg:grid-cols-2 sm:grid-cols-1 gap-[40px] pt-[24px] ">
+    <a href="/under-construction" class="bg-[#96DEA9] cursor-pointer drop-shadow-lg  h-[400px] rounded-xl hover:scale-[1.025] transition ease-in-out delay-150 hover:-translate-y-1 duration-300">
+      <div class="px-[40px] pt-[40px] pb-[20px]">
+        <p class="text-[14px] ">UX Design</p>
+        <p class="text-[24px] sm:text-[20px] font-semibold">Google Meet Network Ping UX Case Study</p>
+      </div>
+      
+      <img class="w-3/4" src="/img/google-meet.png" alt="">
+    </a>
+
+    <a href="/under-construction" class="bg-[#95CCF4] lg:mt-[96px] cursor-pointer drop-shadow-lg  h-[400px] rounded-xl hover:scale-[1.025] transition ease-in-out delay-150 hover:-translate-y-1 duration-300">
+      <div class="px-[40px] pt-[40px] pb-[20px]">
+        <p class="text-[14px] ">UX Design</p>
+        <p class="lg:text-[24px] text-[20px] font-semibold">LTS Academy Class Registration Flow Redesign</p>
+      </div>
+      <img class="" src="/img/lts-academy.png" alt="">
+    </a>
+
+    <a href="/under-construction" class="bg-[#C3E2F9] lg:-mt-[96px] cursor-pointer drop-shadow-lg  h-[400px] rounded-xl hover:scale-[1.025] transition ease-in-out delay-150 hover:-translate-y-1 duration-300">
+      <div class="px-[40px] pt-[40px] pb-[20px]">
+        <p class="text-[14px] ">UI Design</p>
+        <p class="text-[24px] sm:text-[20px] font-semibold">Jenius CoCreate Redesign Competition</p>
+      </div>
+      <img class="w-11/12 mx-auto inset-x-0" src="/img/jenius.png" alt="">
+    </a>
+  </div>
+  
 </div>
-<p class="flex items-center justify-center max-w-md mt-6 mx-auto px-4">
-  <a href="https://11ty.dev/" class="bg-gray-900 inline-block mr-6"><img src="img/11ty.svg" alt="Eleventy" class="h-24" /></a>
-  and
-  <a href="https://tailwindcss.com/" class="ml-6"><img src="img/tailwindcss.svg" alt="Tailwind CSS" class="w-64" /></a>
-</p>
-<p class="flex justify-center max-w-md mt-16 mx-auto">
-  <a href="https://github.com/marcamos/jet#readme" class="mr-6 underline">View on GitHub</a>
-  <a href="https://marcamos-jet.netlify.com/" class="underline">View on Netlify</a>
-</p>
+
+
+{% include "./_includes/footer.html" %}
